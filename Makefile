@@ -6,6 +6,10 @@ dev:
 shell:
 	docker run -it --rm -v $$PWD:/app ruphin/webdev bash
 
+.PHONY: build
+build:
+	docker run -it --rm -v $$PWD:/app ruphin/webdev echo "Done"
+
 .PHONY: production
-production:
+production: build
 	docker build -t ruphin/bitcoin-poll .
