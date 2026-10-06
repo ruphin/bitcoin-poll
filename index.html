@@ -1,11 +1,11 @@
 <!DOCTYPE html> <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" />
 <style>
-  @import url('/node_modules/@material/button/dist/mdc.button.min.css');
-  @import url('/node_modules/@material/checkbox/dist/mdc.checkbox.min.css');
-  @import url('/node_modules/@material/form-field/dist/mdc.form-field.min.css');
-  @import url('/node_modules/@material/textfield/dist/mdc.textfield.min.css');
-  @import url('/node_modules/@material/fab/dist/mdc.fab.min.css');
+  @import '@material/button/dist/mdc.button.min.css';
+  @import '@material/checkbox/dist/mdc.checkbox.min.css';
+  @import '@material/form-field/dist/mdc.form-field.min.css';
+  @import '@material/textfield/dist/mdc.textfield.min.css';
+  @import '@material/fab/dist/mdc.fab.min.css';
 
   body {
     --mdc-theme-primary: rgb(247, 147, 26);
@@ -51,8 +51,4 @@
 </style>
 
 <div id="app"></div>
-<script src="/node_modules/firebase/firebase-app.js"></script>
-<script src="/node_modules/firebase/firebase-database.js"></script>
-<script type="module" src="/index.js"></script>
-
-<span id="browser-sync-binding"></span>
+<script type="module" src="/src/index.js"></script>

@@ -1,11 +1,12 @@
 {
   "name": "daiwallet",
   "private": true,
+  "type": "module",
   "description": "A wallet application for the DAI cryptocurrency",
   "scripts": {
-    "build": "rollup -c",
-    "dev": "browser-sync start --config browsersync.config.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "license": "MIT",
   "dependencies": {
@@ -15,10 +16,10 @@
     "@material/form-field": "0.42.0",
     "@material/textfield": "0.42.1",
     "@material/fab": "0.42.0",
-    "firebase": "5.7.2"
+    "@firebase/app": "0.3.5",
+    "@firebase/database": "0.3.8"
   },
   "devDependencies": {
-    "browser-sync": "2.26.3",
-    "connect-history-api-fallback": "1.5.0"
+    "vite": "^8.3.3"
   }
 }
